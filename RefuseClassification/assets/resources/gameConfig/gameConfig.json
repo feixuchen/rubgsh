@@ -1,0 +1,30 @@
+{
+
+    "randX":["q","w","e","r","t","y","u","i","o","p","a","s","d","f","g","h","j","k","l","z","x","c","v","b","n","m"],
+    "getScore":{"first":10,"add":0},
+
+    "guankaData":{
+        "1":{
+            "correct":2,
+            "error":3,
+            "getScore":{"first":10,"add":0},
+            "gameTime":60,
+            "getStat":[60,80,120]
+        },
+        "2":{
+            "correct":3,
+            "error":3,
+            "getScore":{"first":10,"add":0},
+            "gameTime":60,
+            "getStat":[80,120,150]
+        },
+        "3":{
+            "correct":3,
+            "error":4,
+            "getScore":{"first":10,"add":0},
+            "gameTime":60,
+            "getStat":[80,120,150]
+        }
+    }
+
+}

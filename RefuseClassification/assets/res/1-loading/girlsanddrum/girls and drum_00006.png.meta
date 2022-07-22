@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "f9c07281-876a-47b2-9e1b-3943fb9292f2",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1920,
+  "height": 1080,
+  "platformSettings": {},
+  "subMetas": {
+    "girls and drum_00006": {
+      "ver": "1.0.4",
+      "uuid": "f43fd629-6790-43af-b697-15989054086d",
+      "rawTextureUuid": "f9c07281-876a-47b2-9e1b-3943fb9292f2",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1,
+      "offsetY": -134,
+      "trimX": 105,
+      "trimY": 268,
+      "width": 1712,
+      "height": 812,
+      "rawWidth": 1920,
+      "rawHeight": 1080,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
