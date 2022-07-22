@@ -18,13 +18,12 @@ export default class Lobby extends cc.Component {
     @property(cc.Node)
     content: cc.Node = null
     chioceBtn: any;
-    maxItem: number;
 
     onLoad() {
         UserData.gameData = { gameId: 0 }
-        cc.director.preloadScene("gameScene")
+        cc.director.preloadScene("GameScene")
         this.refreshScrollView()
-        this.initPlayBtn()
+        // this.initPlayBtn()
         // this.initHelpTips()
     }
 
@@ -33,26 +32,20 @@ export default class Lobby extends cc.Component {
         let gameData = UserData.gameData
         let audioIns = UserData.audioIns
         this.chioceBtn = null
-        this.maxItem = 0
-        this.scrollView.opacity = 0
         let items: cc.Node[] = this.content.children
         for (let i = 0; i < items.length; i++) {
             let guanka = myData.guanka[i]
-            if (guanka.lock) {
-                this.maxItem = i
-                items[i].getChildByName("lock").opacity = 0
-                GameAction.getInstance().setBtnCallbackColor_endVioce(items[i], () => {
-                    gameData.gameId = Number(i)
-                    this.tips.active = true
-                    items[i].getChildByName("level-xuanz").opacity = 255
-                    this.chioceBtn = items[i].getChildByName("level-xuanz")
-                }, () => { cc.audioEngine.playEffect(audioIns["button"], false) })
+            if (true || guanka.lock) {
+                GameAction.getInstance().setBtnCallbackColor(items[i],()=>{
+                    gameData.gameId = i+1
+                    cc.director.loadScene("GameScene")
+                })
             } else {
-                items[i].getChildByName("lock").opacity = 255
+               // items[i].getChildByName("lock").opacity = 255
             }
-            items[i].getChildByName("guanka").getChildByName("label").getComponent(cc.Label).string = (i + 1).toString()
-            items[i].getChildByName("level-xuanz").opacity = 0
-            this.initStar(guanka.star, items[i].children)
+
+            // items[i].getChildByName("level-xuanz").opacity = 0
+            this.initStar(guanka.star, items[i].children[0].children)
         }
     }
 

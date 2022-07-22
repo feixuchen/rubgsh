@@ -46,6 +46,7 @@ export default class loadingCon extends cc.Component {
         }).delay(1).to(1.5,{opacity:0}).call(()=>{
             //cc.tween(this.gameLoading).to(1,{opacity:255}).start()
             this.gameLoadingData()
+            this.xuexiao.active = false
         }).start()
     }
 
@@ -96,7 +97,7 @@ export default class loadingCon extends cc.Component {
         this.scheduleOnce(() => {
             this.startBtn.active = true
             GameAction.getInstance().setBtnCallbackColor(this.startBtn, () => {
-                cc.director.loadScene("lobby")
+                cc.director.loadScene("LobbyScene")
             })
         })
     }

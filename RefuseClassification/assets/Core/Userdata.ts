@@ -8,7 +8,7 @@ export default class UserData {
     static readonly gameName: string = "refuseclassification";
     static saveData: any;
     static audioIns: any;
-    static gameData: { gameId: number };
+    static gameData: { gameId: number } = {gameId:1};
     static spriteIns: any;
     static jsonData: any;
 

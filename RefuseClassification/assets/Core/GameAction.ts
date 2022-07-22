@@ -266,6 +266,9 @@ export  class GameAction  {
     };
 
     playEffect(nameString){
+      if(!UserData.audioIns[nameString]){
+        return
+      }
       cc.audioEngine.playEffect(UserData.audioIns[nameString],false)
     }
 
