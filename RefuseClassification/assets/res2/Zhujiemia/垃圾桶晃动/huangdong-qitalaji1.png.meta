@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "5e73be01-5a44-439c-9e07-eda1927e9a50",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 522,
+  "height": 532,
+  "platformSettings": {},
+  "subMetas": {
+    "huangdong-qitalaji1": {
+      "ver": "1.0.4",
+      "uuid": "f8a253ac-96fa-4e98-b07c-39984ab1d0ce",
+      "rawTextureUuid": "5e73be01-5a44-439c-9e07-eda1927e9a50",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 7.5,
+      "offsetY": -1.5,
+      "trimX": 51,
+      "trimY": 37,
+      "width": 435,
+      "height": 461,
+      "rawWidth": 522,
+      "rawHeight": 532,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
